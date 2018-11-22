@@ -72,6 +72,15 @@ public class View {
             case READER_IN_LIST:
                 System.out.println("The reader is already in the list.");
                 break;
+            case ENTER_FROM_1_TO_8:
+                System.out.println("Enter number from 1 to 8.");
+                break;
+            case ENTER_FROM_1_TO_6:
+                System.out.println("Enter number from 1 to 6.");
+                break;
+            case ENTER_FROM_1_TO_MAX_LENGTH:
+                System.out.println("Enter number from 1 to amounts of elements.");
+                break;
             default:
                 break;
         }

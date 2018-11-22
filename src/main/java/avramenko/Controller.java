@@ -112,6 +112,7 @@ public class Controller {
         view.menu();
         view.printMessage(Messages.CHOOSE);
         do {
+            view.printMessage(Messages.ENTER_FROM_1_TO_8);
             choice = view.readNumber(1);
         } while (choice > 8);
         return convertChoiceToConstant(choice);
@@ -126,6 +127,7 @@ public class Controller {
         view.menu();
         view.printMessage(Messages.CHOOSE);
         do {
+            view.printMessage(Messages.ENTER_FROM_1_TO_8);
             choice = view.readNumber(1);
         } while (choice > 8);
         return convertChoiceToConstant(choice);
@@ -163,6 +165,7 @@ public class Controller {
         int maxIndex = booksStorage.getBooks().length;
         view.printMessage(Messages.ENTER_ID_BOOK);
         do {
+            view.printMessage(Messages.ENTER_FROM_1_TO_MAX_LENGTH);
             index = view.readNumber(3);
         } while (index > maxIndex);
         isSuccessful = booksStorage.deleteElement(index - 1);
@@ -206,6 +209,7 @@ public class Controller {
         int maxIndex = readersStorage.getReaders().length;
         view.printMessage(Messages.ENTER_ID_READER);
         do {
+            view.printMessage(Messages.ENTER_FROM_1_TO_MAX_LENGTH);
             index = view.readNumber(3);
         } while (index > maxIndex);
         isSuccessful = readersStorage.deleteElement(index - 1);
@@ -222,6 +226,7 @@ public class Controller {
         view.subMenuForManagingOrders();
         view.printMessage(Messages.CHOOSE);
         do {
+            view.printMessage(Messages.ENTER_FROM_1_TO_6);
             choice = view.readNumber(2);
         } while (choice > 6);
         return convertChoiceToConstant(choice + 10);
@@ -234,6 +239,7 @@ public class Controller {
         view.subMenuForManagingOrders();
         view.printMessage(Messages.CHOOSE);
         do {
+            view.printMessage(Messages.ENTER_FROM_1_TO_6);
             choice = view.readNumber(2);
         } while (choice > 6);
         return convertChoiceToConstant(choice + 10);
